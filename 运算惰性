@@ -1,0 +1,11 @@
+#include<windows.h>
+#include<stdio.h>
+int main()
+{
+	int i = 0, a = 0, b = 2, c = 3, d = 4;
+	i = a++ && b++ && d++;
+	printf("%d %d %d %d\n", a, b, c, d);
+	return 0;
+}
+结果为1 2 3 4
+a++为假且后面为&&，则不会继续运算了，截止到a++
